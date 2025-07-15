@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF'-8'>
+<meta name='viewport content=width=device-width,initial-scale=1.0'>
+<title>Registration</title>
+<style>
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+font-family:Arial,sans-serif;
+background-color:#f4f4f4;
+{
+registration-container{
+background:#fff;
+padding:20px;
+border-radius:5px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1)
+width:300%;
+}
+registration-container input, .registration-container textarea{
+width:100px;
+padding:10px;
+margin:5px 0;
+border:1px solid #ddd;
+border-radius:5px;
+}
+registration-container button{
+padding: 10px;
+background-color:#28a75;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+error
+{
+color:red;
+font:0.9em;
+}
+</style>
+<script>
+<input type='email' id='email name='email' placeholder='Email' required>
+<div class='error' id='emailError'></div>
+<input type='password' id='password' name='password' placeholder='password' required>
+<div class='error' id='passwordError'></div>
+<input type='text' id='phone' name='phone' placeholder='MobileNumber' required>
+<div class='error' id=phoneError'></div>
+<text area id='address' name='address' placeholder='Address' required></textarea>
+<div class='error' id='addressError'></div>
+
+<button type='submit'>Register</button>
+</form>
+</div>
+</body>
+</html>
+
+//validate password
+if(password.length<6>{
+document.getElementById('passwordError').textContent='password must be at least 6 characters long';
+isVaild=false;
+}
+
+//validate phoneNumber
+if(phoneRegex.text(phone)){
+document.getElementById('phoneError').textContent='Mobile Number must be exactly 10 digit';
+isValid=false;
+}
+
+//validate Address
+if(!address) {
+document.getElementById('addressError').textcontent='Address cannot be empty';
+isValid=false;
+}
+
+//submit form if all validation pass
+if(isValid){
+document.getElementById('registrationForm').submit();
+}
+</script>
+</head>
+<body>
+<div class="registration-container">
+<h2>Register</h2>
+<form id="registration Form" onsubmit="validateForm(event)">
+<input type="text" id="firstName" name="firstName" placeholder-"First Name" required>
+<div class="error" id="firstNameError"></div>
+<input type="text" id="lastName" name="lastName" placeholder-"Last Name" required>
+<div class="error"id="lastNameError"></div>
+
+function validateForm(event){
+event.preventDefault();//prevent form submission for validation
+
+//Get form elements
+const firstName= document.getElementById('firstName').value.trim();
+const lastName= document.getElementById('lastName').value.trim();
+const email =document.getElementById('email').value.trim();
+const password =document.getElementById('password').value.trim();
+const phone= document.getElementById('phone').value.trim();
+const address= document.getElementById('address').value.trim();
+
+//Regular
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
